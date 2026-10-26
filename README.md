@@ -18,3 +18,17 @@ git clone git@github.com:xpppppppppp/agent-skills.git
 # copy the skill you want
 cp -r agent-skills/software-dev-orchestrator ~/.agents/skills/
 ```
+
+## Dispatched skills (used by 软件开发总调度)
+
+| Skill | Phase |
+|---|---|
+| `spec-driven-development` | 1 Specify / 3 Plan |
+| `writing-design-docs` | 2 Design |
+| `springboot-patterns` | 4 Implement |
+| `java-springboot` | 4 Implement |
+| `spring-boot-openapi-documentation` | 4 Implement (API docs) |
+| `java-junit` | 4 Tests / 5 Test cases |
+| `code-review` | 6 Review |
+
+> Note: 软件开发总调度 dispatches to these skills at each phase. Copy the whole repo (or the skills you need) into `~/.agents/skills/` so the orchestrator can find them all.
